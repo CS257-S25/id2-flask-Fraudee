@@ -1,6 +1,5 @@
 from flask import Flask
 from ProductionCode import helper_Functions
-'''Imports the fucntions used in this code'''
 
 app = Flask(__name__)
 
@@ -16,6 +15,7 @@ def load_data():
     return helper_Functions.data
 
 data = load_data()
+'''Loads the data from the file and stores it in a variable'''
 
 @app.errorhandler(404)
 def page_not_found(e):
