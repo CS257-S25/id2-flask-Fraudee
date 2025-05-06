@@ -1,6 +1,6 @@
 from flask import Flask
 from ProductionCode import helper_Functions
-
+'''Imports the fucntions used in this code'''
 
 app = Flask(__name__)
 
@@ -30,9 +30,8 @@ def python_bug(e):
 @app.route('/meeting_count', strict_slashes=False)
 def get_meeting_count():
     '''This will make a page for the counts of self-help meetings'''
-    returnedValue = helper_Functions.meeting_count()
-    return "The average count of meetings attended by the subject is: " + str(returnedValue)
-
+    returned_value = helper_Functions.meeting_count()
+    return "The average count of meetings attended by the subject is: " + str(returned_value)
 
 if __name__ == '__main__':
     app.run()
