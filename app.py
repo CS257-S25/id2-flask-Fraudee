@@ -1,3 +1,4 @@
+'''This is the main file that runs the Flask web application.'''
 from flask import Flask
 from ProductionCode import helper_Functions
 
@@ -6,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
     '''This creates the website'''
-    return ("Hello World! This is the homepage. <br>"  
+    return ("Hello World! This is the homepage. <br>"
     "To find the count of self-help meetings type in (url)/meeting/[count]")
 
 def load_data():
