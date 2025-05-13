@@ -1,4 +1,4 @@
-'''This is the main file that runs the Flask web application.'''
+'''This is the main file that runs the Flask app and creates the website.'''
 from flask import Flask
 from ProductionCode import helper_Functions
 
@@ -8,7 +8,7 @@ app = Flask(__name__)
 def homepage():
     '''This creates the website'''
     return ("Hello World! This is the homepage. <br>"
-    "To find the count of self-help meetings type in (url)/meeting/[count]")
+    "To find the count of self-help meetings type in (url)/meeting_count")
 
 def load_data():
     '''This loads the data from the file'''
